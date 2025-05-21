@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Your Work</title>
+  <link rel="stylesheet" href="styles3.css" />
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+ 
+<body>
+
+<!-- Header Section -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">Picverse</div>
+            <ul class="nav-menu">
+                <li><a href="HomePage.html" class="active">HomePage</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="SubmitPage.html">Submit</a></li>
+                <li><a href="Community.html">Community</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+  <div class="container">
+    <h1>Submit Your Artwork</h1>
+    <form id="submissionForm">
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- Title -->
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required />
+
+      <!-- Description -->
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <!-- Tags -->
+      <label for="tags">Tags (comma separated):</label>
+      <input type="text" id="tags" name="tags" required />
+
+      <!-- File Upload -->
+      <label for="fileUpload">Upload Your File:</label>
+      <input type="file" id="fileUpload" name="fileUpload" accept="image/*" required />
+
+      <!-- AI Generated Radio -->
+      <label>Is this AI-generated?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="aiGenerated" value="yes" /> Yes</label>
+        <label><input type="radio" name="aiGenerated" value="no" /> No</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+
+      <!-- Error Message Display -->
+      <div id="errorMessages"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
